@@ -3,8 +3,9 @@ import Image from "next/image";
 import Board from "@/components/board";
 import Score from "@/components/score";
 import styles from "@/styles/index.module.css";
+import ThemeSwitcher from "@/components/ThemeSwitcher";
 
-export default function Home() {
+const Home = () => {
   return (
     <div className={styles.twenty48}>
       <Head>
@@ -32,24 +33,14 @@ export default function Home() {
       </main>
       <div>
         <h2>
-          🚀 <span>Learn React 18 & Next.js</span>
+          <ThemeSwitcher></ThemeSwitcher> 🚀{" "}
+          <span>2048 with React 18 & Next.js</span>
         </h2>
-        <p>
-          Join my{" "}
-          <a
-            href="https://www.udemy.com/course/2048-in-react-and-nextjs/?couponCode=50DISCOUNT"
-            target="_blank"
-            rel="noopener"
-          >
-            Udemy course
-          </a>{" "}
-          and learn React & Next.js by creating your own 2048 game from scratch.
-        </p>
       </div>
       <footer>
         <div className={styles.socials}>
           <a
-            href="https://github.com/mateuszsokola/2048-in-react"
+            href="https://jpsantistebanq.github.io/portfolio/"
             target="_blank"
             rel="noopener"
           >
@@ -60,17 +51,11 @@ export default function Home() {
               height={32}
             />
           </a>
-          <a href="https://twitter.com/msokola" target="_blank" rel="noopener">
-            <Image
-              src="social-twitter.svg"
-              alt="Matéush on Twitter"
-              width={32}
-              height={32}
-            />
-          </a>
         </div>
-        <div>Made with ❤️ by Matéush</div>
+        <div>Made with ❤️ by JP</div>
       </footer>
     </div>
   );
-}
+};
+
+export default Home;

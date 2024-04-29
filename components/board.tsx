@@ -5,7 +5,7 @@ import Tile from "./tile";
 import { GameContext } from "@/context/game-context";
 import MobileSwiper, { SwipeInput } from "./mobile-swiper";
 
-export default function Board() {
+const Board = () => {
   const { getTiles, moveTiles, startGame } = useContext(GameContext);
   const initialized = useRef(false);
 
@@ -91,4 +91,6 @@ export default function Board() {
       </div>
     </MobileSwiper>
   );
-}
+};
+
+export default Board;

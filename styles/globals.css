@@ -1,3 +1,7 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
 :root {
   --pixel-size: 8px;
 
@@ -10,6 +14,46 @@
   /* Colors */
   --primary-text-color: #776e65;
   --secondary-text-color: #f9f6f2;
+
+  /* Tiles background */
+  --tile-text-color: #776e65;
+
+  --tile-4-background: #ede0c8;
+  --tile-8-background: #f2b179;
+  --tile-16-background: #f59563;
+  --tile-32-background: #f67c5f;
+  --tile-64-background: #f65e3b;
+  --tile-128-background: #edcf72;
+  --tile-256-background: #edcc61;
+  --tile-512-background: #edc850;
+  --tile-1024-background: #edc53f;
+  --tile-upper-background: #edc22e;
+}
+
+[data-theme="dark"] {
+  /* Background colors */
+  --primary-background: #3a3a3c; /* Oscuro casi negro */
+  --secondary-background: #5c5752; /* Gris oscuro con un toque de marrón */
+  --cell-background: #504a43; /* Gris marrón más oscuro */
+  --tile-background: #776e65; /* Gris claro similar al color de texto primario en tema claro */
+
+  /* Colors */
+  --primary-text-color: #ece0ca; /* Casi blanco con un toque de amarillo para contraste */
+  --secondary-text-color: #f9f6f2; /* Blanco casi puro para destacar más sobre fondos oscuros */
+
+  /* Tiles background */
+  --tile-text-color: #f9f6f2; /* Blanco para contraste claro en todos los tiles */
+
+  --tile-4-background: #aaa392; /* Gris oscuro suavizado */
+  --tile-8-background: #d97e5d; /* Rojo naranja más oscuro */
+  --tile-16-background: #d76642; /* Naranja quemado más oscuro */
+  --tile-32-background: #d75639; /* Rojo naranja fuerte y oscuro */
+  --tile-64-background: #d53d20; /* Rojo oscuro */
+  --tile-128-background: #d8c870; /* Amarillo mostaza oscuro */
+  --tile-256-background: #d8c560; /* Amarillo oro oscuro */
+  --tile-512-background: #d8c250; /* Amarillo oscuro más apagado */
+  --tile-1024-background: #d8bf40; /* Amarillo verdoso oscuro */
+  --tile-upper-background: #d8bc30; /* Amarillo lima oscuro */
 }
 
 body {
