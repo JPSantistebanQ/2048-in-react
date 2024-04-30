@@ -55,7 +55,7 @@
   --tile-1024-background: #d8bf40; /* Amarillo verdoso oscuro */
   --tile-upper-background: #d8bc30; /* Amarillo lima oscuro */
 }
-
+/*
 @media screen and (max-width: 511px) {
   :root {
     --pixel-size: 11px;
@@ -66,7 +66,7 @@
   :root {
     --pixel-size: 9px;
   }
-}
+}*/
 
 body {
   margin: 0;

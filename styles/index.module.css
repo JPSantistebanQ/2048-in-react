@@ -11,12 +11,12 @@
   }
 }
 
-@media screen and (max-width: 511px) {
+/*@media screen and (max-width: 511px) {
   .twenty48 {
     margin: auto calc(var(--pixel-size) * 0);
     padding: calc(var(--pixel-size) * 0.5);
   }
-}
+}*/
 
 .twenty48 > header {
   display: flex;
