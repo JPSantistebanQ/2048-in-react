@@ -1,13 +1,20 @@
 .twenty48 {
   margin: calc(var(--pixel-size) * 0) auto;
   padding: calc(var(--pixel-size) * 1);
-  width: 100%;
+  width: 100vw;
   max-width: calc(var(--pixel-size) * 37);
 }
 
 @media (min-width: 512px) {
   .twenty48 {
     max-width: calc(var(--pixel-size) * 60);
+  }
+}
+
+@media screen and (max-width: 511px) {
+  .twenty48 {
+    margin: auto calc(var(--pixel-size) * 0);
+    padding: calc(var(--pixel-size) * 0.5);
   }
 }
 
